@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<style>
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @font-face {
+    font-family: Kumbh Sans;
+    src: url(./static/KumbhSans-Black.ttf);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    background-size: contain;
+    background-repeat:space;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+  }
+
+  .section {
+    background-image: url(./images/bg-pattern-card.svg);
+    position: relative;
+    z-index: 1;
+    top: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 380px;
+    border-radius: 5px;
+  }
+
+  .section .card {
+    border-radius: 50%;
+    top: 90px;
+    left: 120px;
+    border: 3px solid white;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section .first {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .section .bold {
+    font-weight: bolder;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    padding-left: 40px;
+  }
+
+  .section .age {
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+  }
+
+  .section .place {
+    color: hsl(227, 10%, 46%);
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-size: 18px;
+  }
+
+  .text {
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 100px;
+  }
+
+  .text .first {
+    line-height: 30px;
+    padding-bottom: 5px;
+  }
+
+  .block {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    gap: 60px;
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .block h4 {
+    font-weight: bolder;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+  }
+
+  .block p {
+    color: hsl(0, 0%, 59%);
+  }
+
+
+  @media screen and (max-height:375px) {
+
+    .container {
+      background-image: url(./images/bg-pattern-bottom.svg);
+      background-color: hsl(185, 75%, 39%);
+      width: 100%;
+    }
+
+    .section {
+      width: 200px
+    }
+
+
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="section">
+      <img src="./images/image-victor.jpg" alt="" class="card">
+
+      <div class="text">
+        <div class="first">
+          <p class="bold">Victor Crest </p>
+          <p class="age">26</p>
+        </div>
+        <p class="place">London</p>
+
+        <div class="block">
+          <div class="block1">
+            <h4>80K</h4>
+            <p>Followers</p>
+          </div>
+
+          <div class="block2">
+            <h4>803K</h4>
+            <p>Likes</p>
+          </div>
+
+          <div class="block3">
+            <h4>1.4K</h4>
+            <p> Photos</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/yeyelovep2">Yeye Love Peter</a>.
+  </div>
+</body>
+
+</html>
